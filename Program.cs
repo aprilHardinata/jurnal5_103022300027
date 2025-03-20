@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-class pemprosesanData
+class PemprosesanData
 {
     public void DapatkanNilaiTerbesar <T>(T nilai1, T nilai2, T nilai3)
     {
@@ -30,7 +30,7 @@ class program
 {
     static void Main()
     {
-        pemprosesanData nilaiTerbesar = new pemprosesanData();
+        PemprosesanData nilaiTerbesar = new PemprosesanData();
 
         nilaiTerbesar.DapatkanNilaiTerbesar<int>(12,34,56);
     }
