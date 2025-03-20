@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-class SimpleDatabase <T>
+class SimpleDatabase<T>
 {
     private List<T> storedData;
     private List<DateTime> inputsaDate;
@@ -11,21 +11,26 @@ class SimpleDatabase <T>
         inputsaDate = new List<DateTime>();
     }
 
-    public void addNewData(T data) {
+    public void addNewData(T data)
+    {
         storedData.Add(data);
         inputsaDate.Add(DateTime.Now);
     }
 
-    public List<T> printAllData() {
+    public List<T> printAllData()
+    {
 
         int i = 1;
 
-        foreach (T data in storedData ) {
+        foreach (T data in storedData)
+        {
             Console.WriteLine($"Data {i} berisi: {data}, yang disimpan pada waktu UTC:{DateTime.Now}");
             i++;
         }
-       
-        return storedData; 
+
+        return storedData;
+    }
+}
 
 class PemprosesanData
 {
